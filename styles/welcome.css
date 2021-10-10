@@ -1,0 +1,142 @@
+.welcome-container {
+  padding: 150px 0 0 0px;
+  height: 660px;
+}
+
+.welcome-section {
+  position: relative;
+  background-color: var(--bg-black);
+}
+
+.shadow {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 680px;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.welcome-heading {
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-paragraph {
+  position: relative;
+  z-index: 2;
+  padding-top: 28px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: var(--font-white);
+}
+
+.welcome-button {
+  position: relative;
+  z-index: 2;
+  margin: 75px 0 0 0;
+  width: 360px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: var(--dark-red);
+  transition: all 0.4s;
+}
+
+.welcome-button:hover {
+  background-color: var(--font-gold);
+}
+
+.welcome-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: var(--font-white);
+}
+
+@media (max-width: 1919px) {
+  .welcome-section {
+    background-size: 700px;
+    background-position: 304px 0px;
+  }
+  .welcome-container {
+    padding: 0;
+    height: 585px;
+  }
+  .welcome-heading {
+    padding-top: 50px;
+    line-height: 90px;
+  }
+  .welcome-paragraph {
+    padding-top: 24px;
+    font-size: 24px;
+  }
+  .welcome-button {
+    margin: 50px 0 0 0;
+    width: 300px;
+    height: 60px;
+  }
+  .welcome-button a {
+    letter-spacing: 1px;
+  }
+  .shadow {
+    left: 304px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .welcome-section {
+    background-size: 728px;
+    background-position: 20px 215px;
+  }
+  .welcome-container {
+    height: 861px;
+  }
+  .welcome-heading {
+    padding-top: 0;
+    line-height: 60px;
+    text-align: center;
+  }
+  .welcome-paragraph {
+    padding-top: 24px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .welcome-button {
+    display: none;
+  }
+  .shadow {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome-section {
+    background-size: 380px;
+    background-position: 20px 180px;
+  }
+  .welcome-container {
+    height: 544px;
+  }
+  .welcome-heading {
+    padding-top: 5px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .welcome-paragraph {
+    padding-top: 24px;
+    font-size: 16px;
+    text-align: center;
+  }
+}

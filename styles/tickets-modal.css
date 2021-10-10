@@ -1,0 +1,706 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: all 1s ease 0s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup-content {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.popup-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup-body {
+  min-height: 100%;
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup-content {
+  background-color: #fff;
+  color: #000;
+  width: 1440px;
+  height: 845px;
+  position: relative;
+  transition: all 1s ease 0s;
+  opacity: 0;
+  transform: translate(-2000px, 0px);
+}
+
+.popup-close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.modal-logo {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 16.39%;
+  right: 77.71%;
+  top: 10.6%;
+  bottom: 84.57%;
+}
+
+.modal-heading {
+  position: absolute;
+  left: 16.39%;
+  right: 56.81%;
+  top: 15.43%;
+  bottom: 78.33%;
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: var(--font-gold);
+}
+
+.tour-to-louvre {
+  position: absolute;
+  left: 16.39%;
+  right: 75.56%;
+  top: 23.44%;
+  bottom: 74.09%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--dark-red);
+}
+
+.tour-to-louvre-border {
+  position: absolute;
+  left: 16.39%;
+  right: 55.83%;
+  top: 27.09%;
+  bottom: 72.56%;
+  background: #740c11;
+  opacity: 0.9;
+}
+
+.mod-date {
+  position: absolute;
+  left: 16.39%;
+  width: 190px;
+  top: 34.51%;
+  bottom: 60.19%;
+  background: var(--font-white);
+  border: 1px solid var(--bg-black);
+  box-sizing: border-box;
+}
+
+.mod-time {
+  position: absolute;
+  width: 190px;
+  height: 45px;
+  left: calc(50% - 190px / 2 - 179px);
+  top: calc(50% - 45px / 2 - 109px);
+  background: var(--font-white);
+  border: 1px solid var(--bg-black);
+  box-sizing: border-box;
+}
+
+.mod-name {
+  position: absolute;
+  left: 16.39%;
+  top: 42.17%;
+  bottom: 52.53%;
+  background: var(--font-white);
+  border: 1px solid var(--bg-black);
+  box-sizing: border-box;
+  width: 400px;
+  padding-left: 5px;
+}
+
+.mod-email {
+  position: absolute;
+  left: 16.39%;
+  top: 49.82%;
+  bottom: 44.88%;
+  background: var(--font-white);
+  border: 1px solid var(--bg-black);
+  box-sizing: border-box;
+  width: 400px;
+  padding-left: 5px;
+}
+
+.mod-phone {
+  position: absolute;
+  left: 16.39%;
+  top: 57.48%;
+  bottom: 37.22%;
+  background: var(--font-white);
+  border: 1px solid var(--bg-black);
+  box-sizing: border-box;
+  width: 400px;
+  padding-left: 5px;
+}
+
+.mod-ticket-type {
+  position: absolute;
+  left: 16.39%;
+  width: 400px;
+  top: 65.14%;
+  bottom: 29.56%;
+  background: var(--font-white);
+  border: 1px solid var(--bg-black);
+  box-sizing: border-box;
+}
+
+.entry-ticket-block {
+  position: absolute;
+  left: 16.39%;
+  right: 55.83%;
+  top: 72.79%;
+  bottom: 11.31%;
+  background: var(--font-white);
+  border: 1px solid var(--bg-black);
+  box-sizing: border-box;
+}
+
+.entry-ticket-heading {
+  position: absolute;
+  left: 17.43%;
+  right: 75.07%;
+  top: 73.97%;
+  bottom: 23.67%;
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: var(--font-gold);
+}
+
+.entry-ticket-border {
+  position: absolute;
+  left: 17.43%;
+  right: 56.88%;
+  top: 76.91%;
+  bottom: 22.85%;
+  background: #740c11;
+  opacity: 0.9;
+}
+
+.entry-ticket-basic {
+  position: absolute;
+  left: 17.43%;
+  right: 73.4%;
+  top: 79.27%;
+  bottom: 18.37%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--bg-black);
+}
+
+.entry-ticket-senior {
+  position: absolute;
+  left: 17.43%;
+  right: 72.71%;
+  top: 84.22%;
+  bottom: 13.43%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--bg-black);
+}
+
+.basic-counter {
+  position: absolute;
+  left: 37.43%;
+  width: 80px;
+  top: 79.27%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--bg-black);
+}
+
+.senior-counter {
+  position: absolute;
+  left: 37.43%;
+  width: 80px;
+  top: 84.22%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--bg-black);
+}
+
+.overview {
+  position: absolute;
+  width: 530px;
+  height: 663px;
+  left: 676px;
+  top: 90px;
+  background: var(--font-white);
+  border: 1px solid var(--bg-black);
+  box-sizing: border-box;
+}
+
+.overview-img {
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  width: 1px;
+  height: 1px;
+  left: 1026px;
+  top: 115px;
+}
+
+.overview-heading {
+  position: absolute;
+  left: 49.03%;
+  right: 41.81%;
+  top: 13.55%;
+  bottom: 81.98%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--font2);
+  line-height: 37px;
+  color: #272727;
+}
+
+.tour-to-louvre-heading {
+  position: absolute;
+  left: 49.03%;
+  right: 41.18%;
+  top: 18.26%;
+  bottom: 78.68%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #740c11;
+  opacity: 0.9;
+}
+
+.date {
+  position: absolute;
+  left: 49.03%;
+  bottom: 75.38%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--bg-black);
+}
+
+.time {
+  position: absolute;
+  left: 49.03%;
+  bottom: 72.2%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--bg-black);
+}
+
+.temporary {
+  position: absolute;
+  left: 49.03%;
+  bottom: 69.02%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--bg-black);
+}
+
+.total-basic {
+  position: absolute;
+  left: 49.03%;
+  right: 48.75%;
+  top: 34.28%;
+  bottom: 63.37%;
+  background: var(--bg-black);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.total-senior {
+  position: absolute;
+  left: 49.03%;
+  right: 48.75%;
+  top: 38.04%;
+  bottom: 59.6%;
+  background: var(--bg-black);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.total-basic-text {
+  position: absolute;
+  left: 51.94%;
+  right: 39.86%;
+  top: 33.92%;
+  bottom: 62.9%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--bg-black);
+}
+
+.total-senior-text {
+  position: absolute;
+  left: 51.94%;
+  right: 39.31%;
+  top: 37.69%;
+  bottom: 59.25%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--bg-black);
+}
+
+.total-basic-sum {
+  position: absolute;
+  left: 78.68%;
+  right: 18.33%;
+  top: 33.92%;
+  bottom: 63.13%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--bg-black);
+}
+
+.total-senior-sum {
+  position: absolute;
+  left: 78.68%;
+  right: 18.33%;
+  top: 37.69%;
+  bottom: 59.25%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--bg-black);
+}
+
+.total-border {
+  position: absolute;
+  left: 49.03%;
+  right: 18.33%;
+  top: 41.81%;
+  bottom: 57.95%;
+  background: #740c11;
+}
+
+.total-big {
+  position: absolute;
+  left: 49.03%;
+  right: 45.42%;
+  top: 43.23%;
+  bottom: 52.3%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font2);
+  line-height: 37px;
+  color: var(--bg-black);
+}
+
+.total-big-sum {
+  position: absolute;
+  left: 77.29%;
+  right: 18.33%;
+  top: 43.23%;
+  bottom: 52.41%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--font2);
+  line-height: 37px;
+  color: var(--bg-black);
+}
+
+.pay-card-front {
+  position: absolute;
+  left: 49.03%;
+  right: 25.97%;
+  top: 48.88%;
+  bottom: 26.27%;
+  z-index: 3;
+  background: #bcbcbc;
+}
+
+.visa {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 68.82%;
+  right: 27.36%;
+  top: 52.89%;
+  bottom: 45.23%;
+  z-index: 3;
+}
+
+.master {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 68.96%;
+  right: 27.36%;
+  top: 56.54%;
+  bottom: 39.69%;
+  z-index: 3;
+}
+
+.expiration-date-h {
+  position: absolute;
+  left: 50.42%;
+  right: 44.03%;
+  top: 58.19%;
+  bottom: 40.16%;
+  z-index: 3;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #161615;
+}
+
+.expiration-date-month {
+  position: absolute;
+  left: 50.42%;
+  right: 42.64%;
+  top: 60.42%;
+  bottom: 35.45%;
+  z-index: 3;
+  background: var(--font-white);
+  border: 0.5px solid #a4a4a3;
+}
+
+.expiration-date-month input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.expiration-date-year {
+  position: absolute;
+  left: 58.4%;
+  right: 34.65%;
+  top: 60.42%;
+  bottom: 35.45%;
+  z-index: 3;
+  background: var(--font-white);
+  border: 0.5px solid #a4a4a3;
+}
+
+.expiration-date-year input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.card-number {
+  position: absolute;
+  left: 50.42%;
+  right: 34.65%;
+  top: 52.89%;
+  bottom: 42.99%;
+  z-index: 3;
+  background: var(--font-white);
+  border: 0.5px solid #a4a4a3;
+}
+.card-number input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.card-number-h {
+  position: absolute;
+  left: 50.42%;
+  right: 44.58%;
+  top: 50.65%;
+  bottom: 47.7%;
+  z-index: 3;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #161615;
+}
+
+.cardholder-name-h {
+  position: absolute;
+  left: 50.42%;
+  right: 43.12%;
+  top: 65.72%;
+  bottom: 32.74%;
+  z-index: 3;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #161615;
+}
+
+.cardholder-name {
+  position: absolute;
+  left: 50.42%;
+  right: 27.36%;
+  top: 67.84%;
+  bottom: 28.03%;
+  z-index: 3;
+  background: var(--font-white);
+  border: 0.567px solid #a4a4a3;
+}
+
+.cardholder-name input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pay-card-back {
+  position: absolute;
+  left: 56.67%;
+  right: 18.33%;
+  top: 52.41%;
+  bottom: 22.73%;
+  z-index: 1;
+  background: #939393;
+}
+
+.pay-card-back-line {
+  position: absolute;
+  left: 56.67%;
+  right: 18.33%;
+  top: 55.36%;
+  bottom: 39.34%;
+  z-index: 2;
+  background: #161615;
+}
+
+.pay-card-back-cvc {
+  position: absolute;
+  left: 75.69%;
+  right: 20.35%;
+  top: 62.43%;
+  bottom: 35.81%;
+  z-index: 2;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #161615;
+}
+
+.pay-card-back-code {
+  position: absolute;
+  left: 75.07%;
+  right: 19.72%;
+  top: 64.78%;
+  bottom: 31.1%;
+  z-index: 2;
+  background: var(--font-white);
+  border: 0.5px solid #a4a4a3;
+}
+.pay-card-back-code input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pay-card-back-txt {
+  position: absolute;
+  left: 75.76%;
+  right: 20.42%;
+  top: 69.61%;
+  bottom: 24.5%;
+  z-index: 2;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #161615;
+}
+
+.book {
+  position: absolute;
+  left: 66.39%;
+  right: 18.33%;
+  top: 80.33%;
+  bottom: 14.37%;
+  background: var(--dark-red);
+  opacity: 0.9;
+}
+
+.book a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--font-white);
+}

@@ -1,0 +1,121 @@
+@import url(header\ burger.css);
+@import url(header.css);
+@import url(welcome.css);
+@import url(visiting.css);
+@import url(explore.css);
+@import url(video.css);
+@import url(gallery.css);
+@import url(tickets.css);
+@import url(tickets-modal.css);
+@import url(contacts.css);
+@import url(footer.css);
+@import url(slider.css);
+@import url(custum-video.css);
+@import url(image-comparison.css);
+
+:root {
+  --bg-black: #030303;
+  --bg-dark: #151719;
+  --dark-red: #710707;
+  --font-gold: #9d8665;
+  --font-white: #ffffff;
+  --font-black: #000000;
+  --font1: 80px;
+  --font2: 32px;
+  --font3: 50px;
+  --font4: 40px;
+  --font5: 28px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 0 240px;
+}
+
+.section-title-light {
+  font-family: Forum;
+  font-weight: normal;
+  font-size: var(--font1);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--font-white);
+}
+
+.section-title-dark {
+  font-family: Forum;
+  font-weight: normal;
+  font-size: var(--font1);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--font-gold);
+}
+
+.underline-title {
+  position: relative;
+}
+
+.underline-title::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--dark-red);
+}
+
+@media (max-width: 1919px) {
+  .wrapper {
+    width: 1024px;
+  }
+  .section-title-light {
+    font-size: var(--font3);
+  }
+  .section-title-dark {
+    font-size: var(--font3);
+  }
+  .section {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .wrapper {
+    width: 768px;
+  }
+  .section-title-light {
+    font-size: var(--font4);
+  }
+  .section-title-dark {
+    font-size: var(--font4);
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 420px;
+  }
+  .section-title-light {
+    font-size: var(--font5);
+  }
+  .section-title-dark {
+    font-size: var(--font5);
+  }
+}
